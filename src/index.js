@@ -1,52 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import pic1 from "./img/pic1.png";
+import SingleComment from "./components/SingleComment.js";
 
 const App = () => {
 	return (
 		<div className='ui comments'>
-			<div className='comment'>
-				<a href='/' className='avatart'>
-					<img src={pic1} alt='profilePicture'></img>
-				</a>
-				<div className='content'>
-					<a href='/' className='author'>
-						Sarah
-					</a>
-					<div className='metadata'>
-						<span className='date'>Today at 5:00PM</span>
-					</div>
-					<div className='text'>It's amazing!</div>
-				</div>
-			</div>
-			<div className='comment'>
-				<a href='/' className='avatart'>
-					<img src={pic1} alt='profilePicture'></img>
-				</a>
-				<div className='content'>
-					<a href='/' className='author'>
-						Sarah
-					</a>
-					<div className='metadata'>
-						<span className='date'>Today at 5:00PM</span>
-					</div>
-					<div className='text'>It's amazing!</div>
-				</div>
-			</div>
-			<div className='comment'>
-				<a href='/' className='avatart'>
-					<img src={pic1} alt='profilePicture'></img>
-				</a>
-				<div className='content'>
-					<a href='/' className='author'>
-						Sarah
-					</a>
-					<div className='metadata'>
-						<span className='date'>Today at 5:00PM</span>
-					</div>
-					<div className='text'>It's amazing!</div>
-				</div>
-			</div>
+			<SingleComment />
+			<SingleComment />
+			<SingleComment />
 		</div>
 	);
 };
